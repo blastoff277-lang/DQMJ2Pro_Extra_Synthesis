@@ -1,54 +1,63 @@
-This fork of Ceris White's Joker 2 Professional repository includes a post-game translation by Gerb.
+This fork of saneezore07's Dragon Quest Monsters: Joker: 2 PROFESSIONAL repository is modified to only apply the additional monster synthesis recipes.
+saneezore07氏の『ドラゴンクエストモンスターズ ジョーカー：2 PROFESSIONAL』リポジトリのこのフォークは、追加のモンスター合成レシピのみを適用するように修正されています。
 
-<img src="./Database/credits.png" width="700">
+情報：
 
-[Patching Program](https://github.com/saneezore07/DQMJ2Pro_Translation/releases) with friendly user interface for patching your legally obtained rom. Select your rom, check which patch options you want, then run the program.<br>
-<img src="./Database/GUI_Patcher/gui.png" width="300">
+このGitHubリポジトリは、『ドラゴンクエストモンスターズ ジョーカー：2 PROFESSIONAL』に、追加のモンスター合成レシピを追加することを目的としています。
+新しい合成レシピは、バランスが崩れず、公平なものとなるよう厳選・調整されています。
+この改造を適用することで、合成を通じて全435体のモンスターを入手できるようになり、また、以前は1回しか作成できなかったモンスターも、何度でも作成できるようになります。
 
-Database of Monster [Synthesis](https://github.com/saneezore07/DQMJ2Pro_Translation/blob/master/Database/synthesis_database.csv) Recipes.<br>
-Database of Monster [Stats and Traits](https://github.com/saneezore07/DQMJ2Pro_Translation/blob/master/Database/monster_database.csv).<br>
-Database of Monster [Resistances](https://github.com/saneezore07/DQMJ2Pro_Translation/blob/master/Database/monster_resistance_database.csv).
+設置手順：
 
-### Features
-- In-game menus, story dialogue, and post-game dialogue have been translated/localised from its original Japanese to English.
-- New synthesis recipes have been added to the game for monsters that exist in the game files, but were either wi-fi exclusive monsters or otherwise not obtainable in gameplay.
-- A user interface program has been created for a seemless patching process.
-- Anti-Piracy patching has been implemented in the patch, allow users to play on original hardware.
-- Optional QOL and gameplay changes have be provided.
-- Game databases have been provided for synthesis, traits, skills and resistances.
+『ドラゴンクエストモンスターズ ジョーカー2 プロフェッショナル』のニンテンドーDS用ゲームカートリッジを.nds形式のROMファイルとしてダンプするか、別の場所からROMを入手してください。
+このGitHubリポジトリをダウンロードし、その内容をデスクトップなど、都合の良い場所に解凍してください。
+ROMをこのフォルダ内に配置し、ROMの名前を「DQMJ2P.nds」に変更してください。
+「patch_synths.bat」という名前のスクリプトを実行し、完了するまでお待ちください。それほど時間はかかりません。
+スクリプトが完了すると、「Patched.nds」という名前のファイルが生成されます。これが、追加のモンスター合成レシピが適用された新しいパッチ済みROMです。
 
-<details>
-<summary>Manually Patching the Translation</summary>
+モンスター合成レシピ：
 
-[Manual Guide](https://github.com/saneezore07/DQMJ2Pro_Translation/blob/master/Guide/step-by-step.md) to patch your legally obtained rom. [Linux](https://github.com/saneezore07/DQMJ2Pro_Translation/blob/master/Guide/linux_guide.md).<br>
-Note: The windows guide tells the patcher to independently source `ndstool.exe`. Since `ndstool` is a [GPL3](https://github.com/saneezore07/DQMJ2Pro_Translation/blob/master/Database/ndstool_license_COPYING.gpl3)+[MIT](https://github.com/saneezore07/DQMJ2Pro_Translation/blob/master/Database/ndstool_license_COPYING.mit) project, a compiled windows binary has been provided in this repository, dated to March 2026. <br>
-Before patching: [New synthesis recipes](https://github.com/saneezore07/DQMJ2Pro_Translation/blob/master/Guide/adding_new_synths.md) has been added to the game for monsters that exist in the game files, but were either wi-fi exclusive monsters or otherwise not obtainable in gameplay.
+リーファ = きりかぶおばけ x スライム
+ルーファ = ワンダーエッグ x リーファ
+ポグフィッシュ = くびかり族 x カバシラー
+ピピット (ティコ) = ヘルコンドル x タマゴロン
+長老ピピット = ピピット x グランスライム
+かみさま = わたぼう x キングモーモン
+モーモン = ワンダーフール x ドラキー
+キラーピッケル = いたずらもぐら x エビルチャリオット
+わたぼう = ドルマゲス x マポレーナ
+メタルハンター = メタルライダー x キラーアーマー
+ヘルクラウド = どぐう戦士 x うごくせきぞう
+プチット族 = おおめだま x アルゴリザード
+カンダタこぶん = プチット族 x ベビーサタン
+カンダタ = ギガンテス x カンダタこぶん
+ワルぼう = ギガデーモン x 大魔王ゾーマ
+ドロルメイジ = ドロル x ジャンバラヤン
+少年レオソード = ウイングタイガー x キングレオ
+サンディ = ローズダンス x ガルーダ
+ゾーマズデビル = 死神きぞく x ハーゴン
+邪神レオソード = 少年レオソード x デモンスペーディオ
+スペディオ = レティス x レオパルド
 
-Eugene Pool \(the old man on the airship\) missing is an anti-piracy measure \(among others\) by the developers.<br>
-This can be circumvented by [pre-applying an anti-piracy \(AP\) patch](https://github.com/saneezore07/DQMJ2Pro_Translation/blob/master/Guide/ap_patching.md) before applying the translation patch.<br>
-This happens on hardware \(DS, 3DS\), but not emulation \(desume, melonDS\).
+4x モンスター合成レシピ：
 
-</details>
+スライムファミリー = (スライムベホマズン x まどうスライム) x (キングスライム x ぶちキング)
+スライダーヒーロー = (デュラン x オーシャンクロー) x (スライムナイト x メタルライダー)
+死神スライダーク = (デュラン x 黒騎士レオコーン) x (ダークナイト x ダークスライム)
+勇車スラリンガル = (ヘルクラウド x メタルキング) x (スライダーヒーロー x ガマキャノン)
+スライダーガール = (スライムジェネラル x メカバーン) x (じごくのマドンナ x エンゼルスライム)
+スラ・ブラスター = (勇車スラリンガル x レティス) x (スラキャンサー x スライムマデュラ)
+スライダークロボ = (サージタウス x エリスグール) x (大魔王ラプソーン x ダイヤモンドスライム)
+バルボロス = (やまたのおろち x ゴレオン将軍) x (ギュメイ将軍 x ゲルニック将軍)
+じげんりゅう = (バルボロス x 魔王オルゴ・デミーラ) x (はくりゅうおう x ブラックドラゴン)
+ポンポコあにき = (サーベルきつね x サーベルきつね) x (ポンポコだぬき x ポンポコだぬき)
+カンダタワイフ = (デスピサロ x シドー) x (カンダタ x ギガントドラゴン)
+キラーマジンガ = (キラーマシン２ x アトラス) x (ドラゴンソルジャー x ひとくいサーベル)
+エリスグール = (スラ・ブラスター x 暗黒の魔神) x (シールドオーガ x 死神スライダーク)
+カンダタおやぶん = (カンダタワイフ x おどるほうせき) x (カンダタ x おどるほうせき)
+キャプテン・クロウ = (死神きぞく x ゆうれい船長) x (キラーマシン x マリンデュエル)
+キングスライム = (スライム x スライム) x (スライム x スライム)
 
-<details>
-<summary>Ceris White's Technical Tools</summary>
+クレジット：
 
-You will need the J2P ROM, BLZ, ndstool (<https://github.com/devkitpro/ndstool>), and python. A compiled build of BLZ is provided for Windows as blz_win.exe; The scripts expect it to be named blz.exe when used.
-You will have to find a compiled ndstool or build it yourself.
-The ndstool command I usually use comes out to this (inside of a `Pro_ROM` folder):
-`../ndstool -x ../DQMJ2P.nds -7 arm7.bin -9 arm9.bin -d data_dir -y overlay_dir -t banner.bin -h header.bin -y7 y7.bin -y9 y9.bin -t banner.bin -o logo.bin`
-and to make the new ROM after changing things:
-`../ndstool -c ../edited.nds -7 arm7.bin -9 arm9.bin -d data_dir -y overlay_dir -t banner.bin -h header.bin -y7 y7.bin -y9 y9.bin -t banner.bin -o logo.bin`
-
-- arm9tool.py: Compresses and decompresses the arm9.bin file; You will need to put a copy of the decompressed arm9.bin in Pro_Tools as Pro_ARM9.bin for msgtool to work. `python Pro_Tools/arm9tool.py decompress Pro_ROM/arm9.bin Pro_Tools/Pro_ARM9.bin`
-- find_untranslated.py: `python Pro_Tools/find_untranslated.py <directory>` will list every file with JP characters inside it. Use with `-v` to print the exact line numbers and strings themselves.
-- msgtool.py: extracts strings. `python Pro_Tools/msgtool.py extract Pro_ROM/data_dir STRINGS/` will extract the msg files to a new STRINGS directory. `python Pro_Tools/msgtool.py repack STRINGS/ OUTPUT/` will rebuild the files to OUTPUT
-- storytool.py: extracts scripts. `python Pro_Tools/storytool.py disasm Pro_ROM/data_dir SCRIPTS/` will extract the script files to a new SCRIPTS directory. `python Pro_Tools/storytool.py asm SCRIPTS/ OUTPUT/` will rebuild the files to OUTPUT
-
-Extract the strings and scripts, edit them, rebuild them to OUTPUT, copy the contents of OUTPUT to data_dir (`cp OUTPUT/* Pro_ROM/data_dir/`) and then rebuild with ndstool. Finally, test your changes by running edited.nds in your emulator of choice.
-
-Newly added:
-- apply_patches.py: Provides an interface for applying patches to the ROM directory, including the above and some other optional patches.
-- performpatch.py: Automatically applies the necessary patches + swaps the gender icons for polarity icons, then builds the translated files for you. For people who only want to play the translated game.
-
-</details>
+darkobl4, Hoodinibobeenie, saneezore07, GemSlimee
