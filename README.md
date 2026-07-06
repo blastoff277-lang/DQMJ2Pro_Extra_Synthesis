@@ -123,3 +123,5 @@ darkobl4, Hoodinibobeenie - Compiling the synthesis recipes and testing
 saneezore07 - Creating new_synths_4g.csv & new_synths_kind.csv (some stuff in patch_synths.bat too)
 
 GemSlimee - Putting together this repository 
+
+ndstool attributed in database folder
